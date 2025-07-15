@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tetris Game</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Tetris Game</h1>
-  <div id="game-container">
-    <div>
-      <div id="game-board"></div>
+    <div class="game-container">
+        <h1>Tetris</h1>
+        <div id="game-board"></div>
+        <div class="score-panel">
+            Score: <span id="score">0</span>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <button id="restart-button">Restart</button>
+        </div>
     </div>
-    <div>
-      <div class="score-info">
-        <p>Score: <span id="score">0</span></p>
-        <p>Level: <span id="level">1</span></p>
-      </div>
-      <h3>Next</h3>
-      <div id="next-board"></div>
-      <button id="restart-button">Restart</button>
-      <div id="game-over" class="hidden">Game Over</div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
